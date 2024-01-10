@@ -1,0 +1,19 @@
+from tkinter import*
+from sqlite3 import*
+
+root=Tk()
+root.title("Login Page")
+root.geometry("2000x1500")
+canvas = Canvas(root, width=2000, height=1500)
+canvas.place(x=0,y=0)
+
+
+canvas = Canvas(root, width=2000, height=1500)
+canvas.place(x=0,y=0)
+bimg=PhotoImage(file='gpm1.png')
+canvas.create_image(670,350,image=bimg)
+sub=PhotoImage(file='subject.png')
+canvas.create_image(690,140,image=sub)
+mis=PhotoImage(file='mis.png')
+b=Button(root,image=mis,height="60",width="500",bg="white",padx=2,pady=2,bd=5).place(x=450,y=270)
+mainloop()
